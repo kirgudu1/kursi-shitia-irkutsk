@@ -99,16 +99,32 @@
 
 
 
-<div class="section_block courses-pills">
-    <h3>
-        Выберите формат обучения: 
-        <a href="#online-courses" class="pill-link">🌐 Онлайн курсы</a> 
-        <a href="#offline-courses" class="pill-link">🏫 Офлайн курсы</a>
+<div class="section_block courses-pills" style="margin-bottom:20px;">
+    <h3 style="display:block; margin-bottom:8px;">
+        Выберите формат обучения:
     </h3>
+    <div class="pill-links">
+        <a href="#online-courses" class="pill-link">🌐 Онлайн курсы</a>
+        <a href="#offline-courses" class="pill-link">🏫 Офлайн курсы</a>
+    </div>
 </div>
 
 <div id="online-courses"></div>
 <div id="offline-courses"></div>
+
+<style>
+@media (max-width: 600px) {
+    .pill-links {
+        display: block;
+    }
+    .pill-links .pill-link {
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+</style>
+
 
 
 	   
@@ -1159,6 +1175,7 @@
 
 
 </html>
+
 
 
 
